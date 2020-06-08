@@ -181,12 +181,19 @@ class _FriendsCell extends StatelessWidget {
 
         //分割线
         Container(
-          margin: EdgeInsets.only(left: 50),
-          width: ScreenWidth(context)-50,
           height: 0.5,
-          color: Colors.grey,
+          color: WeChatThemeColor,
+          child: Row(
+            children: <Widget>[
+              Container(
+                width: 50,
+                color: Colors.white,
+              ),
+            ],
+          ),
         ),
       ],
     );
   }
 }
+
